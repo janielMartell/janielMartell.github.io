@@ -1,0 +1,24 @@
+html,
+body {
+    min-height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    padding: 5%;
+}
