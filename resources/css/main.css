@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 html,
 body {
     margin: 0;
@@ -31,34 +30,39 @@ span {
 }
 
 #container {
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    max-width: 1000px;
-    height: 100%;
-    margin: auto;
+    max-width: 900px;
+}
+
+#info {
+    padding: 0px 1em;
 }
 
 @media only screen and (max-width: 800px) {
     #container {
+        text-align: center;
         justify-content: center;
-        flex-direction: column !important;
+        flex-direction: column;
     }
-    #info {
-        margin-top: 1em;
-        padding: 1%;
-    }
-
 }
 
 a {
     text-decoration: none;
-    color: #333; 
+    color: #444;
+}
+
+.icon:hover {
+    color: #222;
 }
 
 .icon-group {
     display: inline-block;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.icon-group:last-child {
+    margin-bottom: 0;
 }
