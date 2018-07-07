@@ -50,6 +50,10 @@ span {
         margin-top: 1em;
         padding: 1%;
     }
+
+    #emoji {
+        display: inline-block;
+    }
 }
 
 a {
@@ -60,4 +64,8 @@ a {
 .icon-group {
     display: inline-block;
     margin-bottom: 0.5em;
+}
+
+#emoji {
+    display: none;
 }
