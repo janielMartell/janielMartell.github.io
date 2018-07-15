@@ -47,11 +47,14 @@ body {
 
 a {
     text-decoration: none;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> f5f834d42eb0c17dededacf5d59e7f660a7a3771
 }
 
 .icon:hover {
-    color: #333;
+    color: #222;
     transform: scale(1.2);
     transition: transform .2s ease-in-out, color .2s ease-in-out;
 }
