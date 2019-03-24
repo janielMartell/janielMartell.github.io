@@ -14,7 +14,9 @@
   },
   "homepage": "https://github.com/janielMartell/janielMartell.github.io#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.1.0",
     "autoprefixer": "^9.5.0",
+    "cssnano": "^4.1.10",
     "gulp": "^4.0.0",
     "gulp-postcss": "^8.0.0",
     "tailwindcss": "^0.7.4"
