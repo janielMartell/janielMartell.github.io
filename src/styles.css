@@ -10,9 +10,17 @@
  * @import "tailwindcss/preflight";
  */
 @tailwind preflight;
+body {
+    @apply font-sans text-black leading-normal;
+}
 
 a {
     color: inherit;
+    @apply no-underline;
+}
+
+i.icon {
+    @apply mr-0;
 }
 
 /**
@@ -23,6 +31,82 @@ a {
  * @import "tailwindcss/components";
  */
 @tailwind components;
+
+#hero {
+    @apply py-20 bg-white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='338' height='40.6' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='2.8' stroke-opacity='0.1'%3E%3Cpath d='M-500%2C75c0%2C0%2C125-30%2C250-30S0%2C75%2C0%2C75s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C45c0%2C0%2C125-30%2C250-30S0%2C45%2C0%2C45s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C105c0%2C0%2C125-30%2C250-30S0%2C105%2C0%2C105s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C15c0%2C0%2C125-30%2C250-30S0%2C15%2C0%2C15s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500-15c0%2C0%2C125-30%2C250-30S0-15%2C0-15s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C135c0%2C0%2C125-30%2C250-30S0%2C135%2C0%2C135s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#hero img {
+    @apply rounded shadow max-h-80 max-w-60;
+}
+
+.container {
+    @apply px-4;
+}
+
+header {
+    @apply bg-translucent fixed pin-x;
+}
+
+header .container {
+    @apply  my-2 flex justify-between items-baseline;
+}
+
+header .icons a {
+    @apply text-grey-darker p-2;
+}
+header .icons a:hover {
+    @apply text-black
+}
+
+.button {
+    @apply rounded-full text-white  bg-blue-dark text-white px-4 py-2;
+}
+.secondary-button {
+    @apply text-blue-dark py-2 mr-4;
+}
+
+.card {
+    @apply w-1/4 rounded h-48 bg-grey-lighter mr-3 flex;
+}
+
+.card-container {
+    @apply m-auto text-center;
+}
+
+.card:last-child {
+    @apply mr-0;
+}
+
+@screen lg {
+    .container {
+        @apply px-0;
+    }
+
+    .card {
+        @apply h-32;
+    }
+
+    .card-container {
+        @apply flex;
+    }
+
+    .card i {
+        @apply mr-1;
+    }
+
+    .card p {
+        @apply capitalize font-bold;
+    }
+
+}
+
+@screen xl {
+    header {
+        @apply bg-transparent;
+    }
+}
 
 /**
  * Here you would add any of your custom component classes; stuff that you'd
@@ -49,11 +133,6 @@ a {
  * @import "tailwindcss/utilities";
  */
 @tailwind utilities;
-
-.bg-pattern {
-    @apply bg-white;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='338' height='40.6' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='2.8' stroke-opacity='0.1'%3E%3Cpath d='M-500%2C75c0%2C0%2C125-30%2C250-30S0%2C75%2C0%2C75s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C45c0%2C0%2C125-30%2C250-30S0%2C45%2C0%2C45s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C105c0%2C0%2C125-30%2C250-30S0%2C105%2C0%2C105s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C15c0%2C0%2C125-30%2C250-30S0%2C15%2C0%2C15s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500-15c0%2C0%2C125-30%2C250-30S0-15%2C0-15s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3Cpath d='M-500%2C135c0%2C0%2C125-30%2C250-30S0%2C135%2C0%2C135s125%2C30%2C250%2C30s250-30%2C250-30s125-30%2C250-30s250%2C30%2C250%2C30s125%2C30%2C250%2C30s250-30%2C250-30'/%3E%3C/g%3E%3C/svg%3E")
-}
 
 .scale-x {
     transform: scaleX(-1);
