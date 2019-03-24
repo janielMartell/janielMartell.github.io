@@ -1,0 +1,22 @@
+{
+  "name": "janielmartell.github.io",
+  "version": "0.0.1",
+  "description": "Personal Landing Page",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janielMartell/janielMartell.github.io.git"
+  },
+  "author": "Janiel Martell <martell.janiel@gmail.com> (https://github.com/janielMartell)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janielMartell/janielMartell.github.io/issues"
+  },
+  "homepage": "https://github.com/janielMartell/janielMartell.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^0.7.4"
+  }
+}
