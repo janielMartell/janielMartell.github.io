@@ -72,4 +72,5 @@ function build() {
 }
 
 exports.default = series(buildDev, watchTailwind);
+exports.dev = buildDev;
 exports.build = build;

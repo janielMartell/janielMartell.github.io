@@ -2,7 +2,11 @@
   "name": "janielmartell.github.io",
   "version": "0.0.1",
   "description": "Personal Landing Page",
-  "scripts": {},
+  "scripts": {
+    "watch": "npx gulp",
+    "dev": "npx gulp dev",
+    "prod": "npx gulp build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/janielMartell/janielMartell.github.io.git"
