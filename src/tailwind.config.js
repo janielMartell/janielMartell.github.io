@@ -610,6 +610,7 @@ module.exports = {
     '56': '14rem',
     '64': '16rem',
     'full': '100%',
+    '85vh': '85vh',
     'screen': '100vh',
   },
 
